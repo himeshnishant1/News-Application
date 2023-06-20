@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="@dimen/dimen20dp"
+    android:layout_marginVertical="@dimen/dimen5dp"
+    android:layout_height="@dimen/dimen200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/dimen10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/ivNewsImage"/>
+
+        <TextView
+            android:id="@+id/tvNewsHeading"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen40dp"
+            android:layout_above="@+id/tvNewsContent"
+            android:text="Heading"
+            android:gravity="top"
+            android:paddingHorizontal="@dimen/dimen10dp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:background="@color/light_blue_faded"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen20dp"
+            android:id="@+id/tvNewsContent"
+            android:layout_alignParentBottom="true"
+            android:text="Content"
+            android:maxLines="1"
+            android:gravity="top"
+            android:paddingHorizontal="@dimen/dimen10dp"
+            android:textColor="@color/white"
+            android:background="@color/light_blue_faded"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
